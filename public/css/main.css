@@ -31,6 +31,12 @@ footer {
   background-color: #191408;
   height: 20vh;
   color: #f6f0e4;
+  line-height: 1.6em;
+}
+
+.sidebar {
+  font-size: 0.9em;
+  line-height: 1.4em;
 }
 
 .logo {
@@ -47,7 +53,6 @@ footer {
 .sale {
   grid-column: 1 / -1;
   padding: 15px;
-  /*height: 9vh;*/
   background-color: #987733;
   font-size: 2em;
   color: #f6f0e4;
@@ -61,8 +66,10 @@ footer {
 
 .signup {
   grid-column: 1 / -1;
-  padding: 30px;
-  /*height: 12vh;*/
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 50px;
   background-color: #332811;
   font-size: 2em;
   color: #f6f0e4;
@@ -70,18 +77,19 @@ footer {
 }
 
 .signup input[type="text"] {
-  border: 1px solid #999;
+  margin-left: 20px;
   height: 3em;
   width: 20vw;
   text-align: center;
   font-style: italic;
-  color: #999;
-  opacity: 1;
+  color: #987733;
+  border: 1px solid #999;
+  border-radius: 5px;
 }
 
 .signup input[type="button"] {
-  margin: 5px;
-  padding: 13px;
+  margin-left: 10px;
+  padding: 12px;
   border: none;
   background-color: #faf8f7;
   text-align: center;
@@ -89,11 +97,13 @@ footer {
   font-weight: bold;
   border: 2px solid #fff;
   border-radius: 5px;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
 }
 
 .signup input[type="button"]:hover {
   border: 2px solid #987733;
+  background-color: #987733;
+  color: #faf8f7;
 }
 
 /*** Modify input placeholder text style ***/
@@ -142,7 +152,7 @@ footer {
   padding: 12px;
   background-color: #e5d4b1;
   color: #fff;
-  font-size: 130%;
+  font-size: 1.5em;
   text-align: center;
 }
 
@@ -165,4 +175,9 @@ footer {
 
 .social-links i {
   padding: 10px;
+}
+
+.footer-links {
+  list-style-type: none;
+  font-size: 1em;
 }

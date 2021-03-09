@@ -23,8 +23,8 @@ header {
 main {
   grid-column-start: 2;
   display: grid;
-  grid-template-columns: 60% 20%;
-  grid-gap: 20%;
+  grid-template-columns: 70% 20%;
+  grid-gap: 10%;
 }
 
 footer {
