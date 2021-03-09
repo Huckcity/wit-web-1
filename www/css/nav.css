@@ -1,0 +1,46 @@
+/*** Nav CSS ***/
+
+/***
+This stylesheet handles the flexbox layout for the navigation section, as well as style for the links 
+***/
+
+nav#main {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav#main ul {
+  display: flex;
+  margin: 0;
+  font-size: 130%;
+  text-align: center;
+}
+
+nav#main li {
+  flex-basis: 20%;
+  padding: 18px;
+  list-style: none;
+}
+
+nav#main a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #0f0f0e;
+}
+
+.nav-link:hover {
+  border-top: 4px solid #c39b4c;
+  background: #faf8f7;
+  transition: all 0.12s ease;
+}
+
+.active {
+  border-top: 4px solid #c39b4c;
+  background: #faf8f7;
+  font-weight: bold;
+  color: #c39b4c;
+}
+
+.active a {
+  color: #c39b4c;
+}

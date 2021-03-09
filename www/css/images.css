@@ -1,0 +1,13 @@
+/*** Images CSS ***/
+
+/***
+This stylesheet handles the styles for images across the site 
+***/
+
+header {
+  background: url('../images/banner.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100vw;
+  box-shadow: inset 0px 20px 10px rgba(1, 1, 1, 0.5), inset 0px -20px 10px rgba(1, 1, 1, 0.5);
+}
