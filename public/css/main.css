@@ -1,0 +1,168 @@
+/*** Main CSS ***/
+
+/***
+This stylesheet imports all other required stylesheets, and will contain all css not pertaining
+to another specific section/element of the site
+***/
+
+@import url("grid.css");
+@import url("nav.css");
+@import url("images.css");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: #0f0f0e;
+  background-color: #f6f0e4;
+}
+
+main {
+  margin: 30px 0;
+  line-height: 1.6em;
+  font-size: 120%;
+}
+
+footer {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+  background-color: #191408;
+  height: 20vh;
+  color: #f6f0e4;
+}
+
+.logo {
+  flex-shrink: 1;
+  font-family: 'Holtwood One SC', serif;
+  font-size: 2.4em;
+}
+
+.body-link {
+  font-style: italic;
+  color: #000;
+}
+
+.sale {
+  grid-column: 1 / -1;
+  padding: 15px;
+  /*height: 9vh;*/
+  background-color: #987733;
+  font-size: 2em;
+  color: #f6f0e4;
+  text-align: center;
+}
+
+.sale a {
+  color: #f6f0e4;
+  text-decoration: none;
+}
+
+.signup {
+  grid-column: 1 / -1;
+  padding: 30px;
+  /*height: 12vh;*/
+  background-color: #332811;
+  font-size: 2em;
+  color: #f6f0e4;
+  text-align: center;
+}
+
+.signup input[type="text"] {
+  border: 1px solid #999;
+  height: 3em;
+  width: 20vw;
+  text-align: center;
+  font-style: italic;
+  color: #999;
+  opacity: 1;
+}
+
+.signup input[type="button"] {
+  margin: 5px;
+  padding: 13px;
+  border: none;
+  background-color: #faf8f7;
+  text-align: center;
+  color: #987733;
+  font-weight: bold;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}
+
+.signup input[type="button"]:hover {
+  border: 2px solid #987733;
+}
+
+/*** Modify input placeholder text style ***/
+/* REF: https://www.w3schools.com/howto/howto_css_placeholder.asp */
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #c9c9c9;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #c9c9c9;
+  opacity: 1;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #c9c9c9;
+  opacity: 1;
+}
+
+.cards {
+  grid-column-start: 2;
+  margin: 50px 0;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-gap: 3%;
+}
+
+.card {
+  padding: 15px;
+  transition: all 0.2s ease;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.card-image-tail {
+  padding: 12px;
+  background-color: #e5d4b1;
+  color: #fff;
+  font-size: 130%;
+  text-align: center;
+}
+
+.card:hover {
+  padding: 5px;
+}
+
+.card-jump {
+  display: inline;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-links i {
+  padding: 10px;
+}

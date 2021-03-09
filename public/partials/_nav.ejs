@@ -1,0 +1,31 @@
+<nav id="main">
+  <a class="logo" href="index.html">
+    GOT WOOD?
+  </a>
+  <ul>
+	<li id="home" class="nav-link">
+      <a href="index.html">Home</a>
+	</li>
+	<li id="range" class="nav-link">
+	  <a href="range.html">Range</a>
+	</li>
+	<li id="sale" class="nav-link">
+	  <a href="sale.html">Sale</a>
+	</li>
+	<li id="gallery" class="nav-link">
+	  <a href="gallery.html">Gallery</a>
+	</li>
+	<li id="about" class="nav-link">
+	  <a href="about.html">About</a>
+	</li>
+	<li id="contact" class="nav-link">
+	  <a href="contact.html">Contact</a>
+	</li>
+	</ul>
+</nav>
+
+<%- include('./_header.ejs'); %>
+
+<script>
+  document.querySelector("#<%= id %>").classList.add("active")
+</script>
