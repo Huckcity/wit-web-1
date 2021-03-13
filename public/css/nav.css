@@ -5,6 +5,10 @@ This stylesheet handles the flexbox layout for the navigation section, as well a
 ***/
 
 nav#main {
+  grid-column-start: 2;
+}
+
+nav#main {
   display: flex;
   justify-content: space-between;
 }
@@ -12,7 +16,7 @@ nav#main {
 nav#main ul {
   display: flex;
   margin: 0;
-  font-size: 130%;
+  font-size: 1.4em;
   text-align: center;
 }
 
