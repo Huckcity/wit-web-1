@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -17,33 +17,46 @@
     GOT WOOD?
   </a>
   <ul>
-	<li id="home" class="nav-link">
-      <a href="index.html">Home</a>
-	</li>
-	<li id="range" class="nav-link">
-	  <a href="range.html">Range</a>
-	</li>
-	<li id="sale" class="nav-link">
-	  <a href="sale.html">Sale</a>
-	</li>
-	<li id="gallery" class="nav-link">
-	  <a href="gallery.html">Gallery</a>
-	</li>
-	<li id="about" class="nav-link">
-	  <a href="about.html">About</a>
-	</li>
-	<li id="contact" class="nav-link">
-	  <a href="contact.html">Contact</a>
-	</li>
-	</ul>
+    <a href="index.html">
+      <li id="home" class="nav-link">
+        Home
+      </li>
+    </a>
+    <a href="#">
+      <li id="range" class="nav-link dropdown">
+        Range
+        <div class="dropdown-content">
+          <a href="tables.html">Tables</a>
+          <a href="shelves.html">Shelves</a>
+          <a href="other.html">Other</a>
+        </div>
+      </li>
+    </a>
+    <a href="sale.html">
+      <li id="sale" class="nav-link">
+        Sale
+      </li>
+    </a>
+    <a href="gallery.html">
+      <li id="gallery" class="nav-link">
+        Gallery
+      </li>
+    </a>
+    <a href="about.html">
+      <li id="about" class="nav-link">
+        About
+      </li>
+    </a>
+    <a href="contact.html">
+      <li id="contact" class="nav-link">
+        Contact
+      </li>
+    </a>
+  </ul>
 </nav>
-
-<header>
-  
-</header>
-
+<header class="container-splash"></header>
 <script>
-  document.querySelector("#contact").classList.add("active")
+document.querySelector("#contact").classList.add("active")
 </script>
 
 <main>
@@ -51,22 +64,27 @@
 	<p>This is the contact content</p>
   </article>
 </main>
-    <footer>
-  <section class="business-details">
-    <ul class="footer-links">
-    	<li>Home</li>
+    <footer class="container-splash">
+  <section class="footer-links">
+    <ul>
+    	<li><a href="index.html">Home</a></li>
     	<li>Range</li>
-    	<li>Sale</li>
-    	<li>About</li>
-    	<li>Contact</li>
+      <ul>
+        <li><a href="tables.html">Tables</a></li>
+        <li><a href="shelves.html">Shelves</a></li>
+        <li><a href="other.html">Other</a></li>
+      </ul>
+    	<li><a href="sale.html">Sale</a></li>
+    	<li><a href="about.html">About</a></li>
+    	<li><a href="contact.html">Contact</a></li>
     </ul>
   </section>
   <section class="site-links">
     <p>
-      Got Wood<br />
-      Unit 1 & 2 Cavan Enterprise Centre<br />
-      Dublin Road<br />
-      Killygarry<br />
+      <strong>GOT WOOD</strong><br>
+      Unit 1 & 2 Cavan Enterprise Centre<br>
+      Dublin Road<br>
+      Killygarry<br>
       Cavan
     </p>
   </section>
