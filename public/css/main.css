@@ -18,19 +18,28 @@ body {
 }
 
 main {
-  margin: 30px 0;
   line-height: 1.6em;
-  font-size: 120%;
+  font-size: 1.2em;
 }
 
 footer {
   display: flex;
   justify-content: space-around;
-  padding-top: 30px;
+  padding: 30px;
   background-color: #191408;
   height: 20vh;
   color: #f6f0e4;
   line-height: 1.6em;
+}
+
+h1,
+h2 {
+  font-family: 'Holtwood One SC', serif;
+  font-size: 1.4em;
+}
+
+.main-header {
+  grid-column: 1 /-1;
 }
 
 .sidebar {
@@ -49,8 +58,12 @@ footer {
   color: #000;
 }
 
+/* alternative to bold to prevent content shifting with the extra DOM space occupied by bold characters */
+.body-link:hover {
+  -webkit-text-stroke: 0.02em;
+}
+
 .sale-banner {
-  /*grid-column: 1 / 3;*/
   padding: 15px;
   background-color: #987733;
   font-size: 2em;
@@ -64,7 +77,6 @@ footer {
 }
 
 .signup-banner {
-  /*grid-column: 1 / -1;*/
   display: flex;
   justify-content: center;
   align-content: center;
@@ -105,6 +117,74 @@ footer {
   color: #faf8f7;
 }
 
+.cards {
+  margin: 30px 0 50px 0;
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  grid-gap: 2%;
+}
+
+.card {
+  /*padding: 15px;*/
+  transition: all 0.2s ease;
+  box-shadow: 5px 5px 5px 5px #c9c9c9;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.card-image-tail {
+  padding: 10px 12px;
+  background-color: #e5d4b1;
+  color: #fff;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.card:hover {
+  /*padding: 5px;*/
+  box-shadow: 5px 5px 5px 5px #999;
+}
+
+.card-description {
+  text-align: left;
+  font-size: 0.7em;
+}
+
+.card-jump {
+  display: inline;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.footer-links {
+  list-style-type: none;
+}
+
+.footer-links a {
+  color: #f6f0e4;
+  text-decoration: none
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-links i {
+  padding: 10px;
+}
+
+.social-links i:hover {
+  opacity: 70%
+}
+
 /*** Modify input placeholder text style ***/
 /* REF: https://www.w3schools.com/howto/howto_css_placeholder.asp */
 
@@ -125,63 +205,4 @@ footer {
   /* Microsoft Edge */
   color: #c9c9c9;
   opacity: 1;
-}
-
-.cards {
-  /*grid-column-start: 2;*/
-  margin: 50px 0;
-  display: grid;
-  grid-template-columns: 30% 30% 30%;
-  grid-gap: 3%;
-}
-
-.card {
-  padding: 15px;
-  transition: all 0.2s ease;
-}
-
-.card img {
-  width: 100%;
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-
-.card-image-tail {
-  padding: 3px 12px;
-  background-color: #e5d4b1;
-  color: #fff;
-  font-size: 1.5em;
-  text-align: center;
-}
-
-.card:hover {
-  padding: 5px;
-}
-
-.card-description {
-  text-align: left;
-  font-size: 0.7em;
-}
-
-.card-jump {
-  display: inline;
-}
-
-.card a {
-  text-decoration: none;
-}
-
-.footer-links {
-  list-style-type: none;
-  font-size: 1em;
-}
-
-.social-links {
-  display: flex;
-  justify-content: space-between;
-}
-
-.social-links i {
-  padding: 10px;
 }

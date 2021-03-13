@@ -7,7 +7,7 @@ a 3 column layout, with header expanding full width to accomodate the banner ima
 
 .container {
   display: grid;
-  grid-template-columns: [full-start] minmax(1em, 1fr) [main-start] minmax(0, 80em) [main-end] minmax(1em, 1fr) [full-end];
+  grid-template-columns: [full-start] minmax(1em, 1fr) [main-start] minmax(0, 75em) [main-end] minmax(1em, 1fr) [full-end];
 }
 
 .container>* {
@@ -24,7 +24,7 @@ header {
 }
 
 main {
-  grid-column-start: 2;
+  /*grid-column-start: 2;*/
   display: grid;
   grid-template-columns: 80% 15%;
   grid-column-gap: 5%;
