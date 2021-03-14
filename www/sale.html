@@ -22,7 +22,7 @@
         Home
       </li>
     </a>
-    <a href="#">
+    <!-- <a href="#"> -->
       <li id="range" class="nav-link dropdown">
         Range
         <div class="dropdown-content">
@@ -31,7 +31,7 @@
           <a href="other.html">Other</a>
         </div>
       </li>
-    </a>
+    <!-- </a> -->
     <a href="sale.html">
       <li id="sale" class="nav-link">
         Sale
@@ -54,15 +54,61 @@
     </a>
   </ul>
 </nav>
-<header class="container-splash"></header>
+<header class="container-splash sale"></header>
 <script>
+var id = document.querySelector("#sale").id
 document.querySelector("#sale").classList.add("active")
 </script>
 
 <main>
-  <article>
-	<p>This is the SALE content</p>
-  </article>
+  <section class="main-header">
+    <h2>Sale</h2>
+    <p>Here's a collection of really odd stuff we're looking to shift...</p>
+  </section>
+  <section class="cards">
+    <article class="card">
+      <img src="images/other/other5.jpg" alt="Wooden Block">
+      <div class="card-image-tail">
+        <div class="card-description">
+          <h3>Wooden Block</h3>
+          <ul>
+            <li>Solid Oak</li>
+            <li>800 x 800mm</li>
+            <li>€250 o.n.o</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+    <article class="card">
+      <img src="images/other/other2.jpg" alt="Chopping Board">
+      <div class="card-image-tail">
+        <div class="card-description">
+          <h3>Artistic Chair</h3>
+          <ul>
+            <li>Solid Wood</li>
+            <li>Seats one</li>
+            <li>€100</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+    <article class="card">
+      <img src="images/other/other3.jpg" alt="product 1">
+      <div class="card-image-tail">
+        <div class="card-description">
+          <h3>Not Sure...</h3>
+          <ul>
+            <li>Wood, probably</li>
+            <li>Tallish</li>
+            <li>€3.50 o.n.o</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+  </section>
+  <aside>
+    <p>Are you looking for something really odd? <a href="contact.html" class="body-link">Let us know!</a></p>
+  </aside>
 </main>
     <footer class="container-splash">
   <section class="footer-links">

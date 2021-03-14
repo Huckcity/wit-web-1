@@ -8,7 +8,7 @@
         Home
       </li>
     </a>
-    <a href="#">
+    <!-- <a href="#"> -->
       <li id="range" class="nav-link dropdown">
         Range
         <div class="dropdown-content">
@@ -17,7 +17,7 @@
           <a href="other.html">Other</a>
         </div>
       </li>
-    </a>
+    <!-- </a> -->
     <a href="sale.html">
       <li id="sale" class="nav-link">
         Sale
@@ -40,7 +40,8 @@
     </a>
   </ul>
 </nav>
-<%- include('./_header.ejs'); %>
+<%- include('./_header.ejs', {id: id});  %>
 <script>
+var id = document.querySelector("#<%= id %>").id
 document.querySelector("#<%= id %>").classList.add("active")
 </script>

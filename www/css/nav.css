@@ -6,6 +6,7 @@ This stylesheet handles the flexbox layout for the navigation section, as well a
 
 nav#main {
   grid-column-start: 2;
+  /*font-family: 'Holtwood One SC', serif;*/
 }
 
 nav#main {
@@ -32,6 +33,10 @@ nav#main a {
   color: #0f0f0e;
 }
 
+.nav-link {
+  text-transform: uppercase;
+}
+
 .nav-link:hover {
   border-top: 4px solid #c39b4c;
   background: #faf8f7;
@@ -41,14 +46,7 @@ nav#main a {
 .active {
   border-top: 4px solid #c39b4c;
   background: #faf8f7;
-  font-weight: bold;
-  /*color: #c39b4c;*/
 }
-
-.active a {
-  /*color: #c39b4c;*/
-}
-
 
 .dropdown {
   position: relative;
@@ -74,6 +72,7 @@ nav#main a {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  transition: all 0.12s ease;
 }
 
 /* Change color of dropdown links on hover */

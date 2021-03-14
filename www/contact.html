@@ -22,7 +22,7 @@
         Home
       </li>
     </a>
-    <a href="#">
+    <!-- <a href="#"> -->
       <li id="range" class="nav-link dropdown">
         Range
         <div class="dropdown-content">
@@ -31,7 +31,7 @@
           <a href="other.html">Other</a>
         </div>
       </li>
-    </a>
+    <!-- </a> -->
     <a href="sale.html">
       <li id="sale" class="nav-link">
         Sale
@@ -54,15 +54,29 @@
     </a>
   </ul>
 </nav>
-<header class="container-splash"></header>
+<header class="container-splash contact"></header>
 <script>
+var id = document.querySelector("#contact").id
 document.querySelector("#contact").classList.add("active")
 </script>
-
 <main>
-  <article>
-	<p>This is the contact content</p>
-  </article>
+  <section class="contact">
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name">
+      <br>
+      <label for="email">Email:</label>
+      <input type="text" id="name">
+      <br>
+      <label for="message">Message</label>
+      <textarea rows="5" id="message"></textarea>
+      <button type="submit" class="subscribe-button">Submit</button>
+    </form>
+  </section>
+  <aside>
+    <h3>Contact Us</h3>
+    <p>If you would like to discuss a specific project please fill out the form and we will get back to you as soon as possible.</p>
+  </aside>
 </main>
     <footer class="container-splash">
   <section class="footer-links">
